@@ -2,9 +2,9 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <section className="container mx-auto py-10 px-10">
+        <section className="container mx-auto py-10 ">
             <div className=" flex justify-center">
-                <div className="max-w-lg">
+                <div>
                     <h1
                         className=" text-center text-gray-950 text-3xl md:text-5xl font-bold font-['Montserrat'] capitalize leading-[57.60px]">SEE
                         OUR WORK

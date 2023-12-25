@@ -48,9 +48,9 @@ const Navbar = () => {
                 <div className=" flex items-center gap-5">
                     <ol className="flex items-center gap-5">
                         {
-                            navLink?.map(data => {
+                            navLink?.map((data,index) => {
                                 return (
-                                    <li key={data?.path}>
+                                    <li key={index}>
                                         <a href={data?.path}
                                            className="text-gray-950 text-base font-bold font-['Montserrat'] rounded px-[15px] py-[12px] hover:bg-orange-500 hover:text-white transition hover:transition "
                                         >{data?.title}</a>
@@ -61,9 +61,9 @@ const Navbar = () => {
                     </ol>
                     <ol className="flex items-center gap-2">
                         {
-                            socialLink?.map(data => {
+                            socialLink?.map((data,index) => {
                                 return (
-                                    <li key={data?.path}>
+                                    <li key={index}>
                                         <a href={data?.link}>
                                             <img
                                                 src={data?.icon}

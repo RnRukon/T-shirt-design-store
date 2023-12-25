@@ -1,0 +1,53 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+     /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 33.33%; /* Set the width to show three items at a time */
+    box-sizing: border-box;
+    padding: 0 10px; /* Optional padding between slides */
+}
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 50%; /* Set the width to 50% for screens wider than 768px */
+    }
+}
+@media (min-width: 1200px) {
+    .slide {
+        flex: 0 0 33.33%; /* Set the width to 33.33% for screens wider than 1200px */
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+   background-color: #fb930f80;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
