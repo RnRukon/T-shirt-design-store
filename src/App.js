@@ -7,11 +7,13 @@ import Projects from "./Components/Projects/Projects";
 import Services from "./Components/Services/Services";
 import Pricing from "./Components/Pricing/Pricing";
 import Reviews from "./Components/Reviews/Reviews";
+import OutTeam from "./Components/OurTeam/OutTeam";
+import Subscribe from "./Components/Subscribe/Subscribe";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
      <main className="bg-neutral-100">
-
          <Navbar/>
          <Banner/>
          <Counter/>
@@ -19,6 +21,9 @@ function App() {
          <Services/>
          <Pricing/>
          <Reviews/>
+         <OutTeam/>
+         <Subscribe/>
+         <Footer/>
      </main>
   );
 }

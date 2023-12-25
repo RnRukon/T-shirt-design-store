@@ -44,7 +44,7 @@ const Pricing = () => {
 
                     {
                         pricings?.datas?.map((data, index) => {
-                            console.log(data)
+
                             return (
                                 <div key={index}
                                      className=" rounded border-2 border-gray-950 py-10 px-[34px] flex flex-col justify-between"
