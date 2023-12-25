@@ -120,21 +120,21 @@ const Footer = () => {
 
                             <ol className="grid grid-cols-3">
                                 {
-                                    footerData?.footerLink?.map(data => {
+                                    footerData?.footerLink?.map((data,index) => {
 
 
                                         return (
-                                            <li>
+                                            <li key={index}>
                                                 <div>
                                                     <h3 className="text-gray-950 text-base font-medium font-['Montserrat'] leading-7">{data?.title}</h3>
 
                                                     <div className="pt-[44px]">
                                                         <ol>
                                                             {
-                                                                data?.categories?.map((data) => {
+                                                                data?.categories?.map((data,index) => {
 
                                                                     return (
-                                                                        <li>
+                                                                        <li key={index}>
                                                                             <a
                                                                                 className=" text-gray-950 text-opacity-50 text-[15.17px] font-normal font-['Poppins'] leading-snug"
                                                                                 href={data?.path}>

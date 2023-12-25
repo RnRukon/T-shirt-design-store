@@ -4,9 +4,9 @@ import React, {useState} from 'react';
 const Carousel = ({children}) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const goToSlide = (index) => {
+    /*const goToSlide = (index) => {
         setCurrentSlide(index);
-    };
+    };*/
 
     const goToPrevSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide === 0 ? images.length - 1 : prevSlide - 1));

@@ -67,6 +67,7 @@ const Pricing = () => {
                                                 data?.features?.map((feature, index) => {
                                                     return (
                                                         <li
+                                                            key={index}
                                                             className="text-gray-950 text-2xl font-medium font-['Montserrat'] leading-[33.60px] flex py-2.5">
 
                                                             <img src="/images/raphael_tshirt.png" alt=""
