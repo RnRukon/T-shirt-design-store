@@ -17,29 +17,25 @@ const Services = () => {
     ]
 
     return (
-        <section>
-            <div className="container mx-auto px-5">
+        <section id="custom-t-shirt">
+            <div className="container mx-auto  px-5">
                 <div className="flex justify-center">
-                    <div  className="max-w-2xl">
-                        <h1 className="text-center text-gray-950 text-5xl font-bold font-['Montserrat'] capitalize leading-[57.60px]">CUSTOM
-                            T-SHIRT</h1>
+                    <div className="max-w-[777px] text-center">
+                        <h1 className=" text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] uppercase leading-[57.60px]">CUSTOM T-SHIRT</h1>
                         <p
-                            className="text-center text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Searching
-                            for that perfect T-shirt to rock on Amazon, Etsy, Shopify, and more? Look no further! We
-                            specialize
-                            in creating custom, awesome T-shirt designs tailored to your ideas, or we can provide our
-                            own.
+                            className="pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Searching for that perfect T-shirt to rock on Amazon, Etsy, Shopify, and more? Look no further! We specialize in creating custom, awesome T-shirt designs tailored to your ideas, or we can provide our own.
                         </p>
                     </div>
                 </div>
             </div>
 
 
-            <div className="pt-10 bg-yellow-50 mt-10 ">
+            <div className="pt-10 bg-yellow-50 mt-10  px-5">
                 <div className=" container  mx-auto">
                     <div className="flex justify-center pt-5">
                         <h1
-                            className="text-center text-orange-500 text-[40px] font-semibold font-['Montserrat'] uppercase leading-[48px]">My services details and you will get
+                            className="text-center text-orange-500 text-2xl md:text-3xl font-semibold font-['Montserrat'] uppercase md:leading-[48px]">My
+                            services details and you will get
                         </h1>
                     </div>
 

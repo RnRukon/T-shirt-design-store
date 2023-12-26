@@ -2,8 +2,8 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div>
-            <img  className="w-full h-[70vh]" src="/images/banner.avif" alt=""/>
+        <div id="home" className="mt-[95px]">
+            <img  className="w-full max-h-[70vh] object-fill" src="/images/banner.avif" alt=""/>
         </div>
     );
 };

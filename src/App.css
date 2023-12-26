@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.review-card:hover div div img{
+  border:2px solid #FE7E21;
+}
+.review-card{
+  color: #000110;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.review-card:hover{
+  color: white;
+  background-color: #000110;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pricingCard:hover{
+  color: white;
+  background-color: #000110;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.pricingCard:hover div div h1{
+  color: #FE7E21;
+}
+.pricingCard:hover div div div{
+  border-color: #FE7E21;
+  color: #FE7E21;
+}
+
+.pricingCard:hover div ol li{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pricingCard:hover div button{
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pricingCard div button:hover{
+  background-color: #FE7E21;
+  border-color: #FE7E21;
 }

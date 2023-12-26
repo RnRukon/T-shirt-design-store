@@ -5,19 +5,19 @@ const Navbar = () => {
     const navLink=[
         {
             title:"HOME",
-            path:"/"
+            path:"/#home"
         },
         {
             title:"CUSTOM T-SHIRT",
-            path:"/custom-t-shirt"
+            path:"/#custom-t-shirt"
         },
         {
             title:"PORTFOLIO",
-            path:"/portfolio"
+            path:"/#portfolio"
         },
         {
             title:"CONTACT US",
-            path:"/contact-us"
+            path:"/#contact-us"
         }
     ];
 
@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className=" bg-white shadow flex justify-between items-center md:px-20 px-5">
+        <nav  className="  shadow flex justify-between items-center md:px-20 px-5 fixed z-10 w-full bg-white top-0">
             <div className="text-center text-gray-950 text-[64px] font-black font-['Montserrat']">PB</div>
 
             <div className=" hidden lg:block">
@@ -80,9 +80,9 @@ const Navbar = () => {
             </div>
 
             <div className="lg:hidden block">
-                <a href="/">
+                <button type="button">
                     <img src="/images/threeLine.png" alt=""/>
-                </a>
+                </button>
             </div>
         </nav>
     );

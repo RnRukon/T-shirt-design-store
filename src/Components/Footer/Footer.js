@@ -73,9 +73,9 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="container mx-auto py-[120px]">
-                <div className="grid grid-cols-12">
-                    <div className="col-span-4">
+            <div className="container mx-auto px-5 py-[120px]">
+                <div className="grid md:grid-cols-12">
+                    <div className="md:col-span-4">
                         <div className="flex items-center">
                             <h1 className="w-[75px] h-[57px] text-center"><span
                                 className="text-gray-950 text-5xl font-bold font-['Montserrat'] leading-[57.60px]">P</span><span
@@ -113,12 +113,12 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="col-span-8">
+                    <div className="md:col-span-8">
 
 
                         <div>
 
-                            <ol className="grid grid-cols-3">
+                            <ol className="grid grid-cols-2 md:grid-cols-3">
                                 {
                                     footerData?.footerLink?.map((data,index) => {
 
@@ -126,9 +126,9 @@ const Footer = () => {
                                         return (
                                             <li key={index}>
                                                 <div>
-                                                    <h3 className="text-gray-950 text-base font-medium font-['Montserrat'] leading-7">{data?.title}</h3>
+                                                    <h3 className="text-gray-950 text-base font-medium font-['Montserrat'] leading-7 pt-10 md:pt-0">{data?.title}</h3>
 
-                                                    <div className="pt-[44px]">
+                                                    <div className="pt-5 md:pt-[44px]">
                                                         <ol>
                                                             {
                                                                 data?.categories?.map((data,index) => {

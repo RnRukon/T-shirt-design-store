@@ -4,10 +4,6 @@ import React, {useState} from 'react';
 const Carousel = ({children}) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    /*const goToSlide = (index) => {
-        setCurrentSlide(index);
-    };*/
-
     const goToPrevSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide === 0 ? images.length - 1 : prevSlide - 1));
     };
@@ -26,21 +22,18 @@ const Carousel = ({children}) => {
                     </div>
                 ))}
             </div>
-            <button className="arrow prev" onClick={goToPrevSlide}>
-                &lt;
-            </button>
-            <button className="arrow next" onClick={goToNextSlide}>
-                &gt;
-            </button>
 
-            <div className="flex justify-center">
-                <div className=" justify-center items-center inline-flex">
+            <div className="flex justify-center pt-5">
+                <div className=" flex justify-center items-center  gap-5">
 
-                    <button className="w-12 h-12" onClick={goToPrevSlide}>
-                        <img className="h-10"  src="/images/Arrow-LeftCircle.png" alt=""/>
+                    <button className="  rounded-full hover:bg-orange-500 hover:text-white -rotate-90 p-2 hover:border-orange-500 border-2 border-black"
+                            onClick={goToPrevSlide}>
+                        <img  className="-rotate-90 " height={24} width={24} src="/images/rightArrow.svg" alt=""/>
+
                     </button>
-                    <button className="w-12 h-12 p-1 " onClick={goToNextSlide}>
-                        <img className="h-10" src="/images/Arrow-Right-Circle.png" alt=""/>
+                    <button className=" rounded-full hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
+                            onClick={goToNextSlide}>
+                        <img  height={24} width={24} src="/images/rightArrow.svg" alt=""/>
                     </button>
                 </div>
             </div>

@@ -2,7 +2,6 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-     /* Adjust the maximum width as needed */
     margin: 0 auto;
 }
 
@@ -17,22 +16,11 @@
     padding: 0 10px; /* Optional padding between slides */
 }
 
-@media (min-width: 768px) {
-    .slide {
-        flex: 0 0 50%; /* Set the width to 50% for screens wider than 768px */
-    }
-}
-@media (min-width: 1200px) {
-    .slide {
-        flex: 0 0 33.33%; /* Set the width to 33.33% for screens wider than 1200px */
-    }
-}
-
 .arrow {
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
-   background-color: #fb930f80;
+    background-color: #fb930f80;
     cursor: pointer;
     border: none;
     width: 30px;
