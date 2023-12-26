@@ -8,7 +8,7 @@ const massage="Obsessed\n" +
     "                genius, look no further! 10/10, recommend without a doubt!"
 const ReviewCard = () => {
     return (
-        <div className="review-card w-[470px] rounded border-2 border-gray-950 p-5 ">
+        <div className="review-card w-[300px] lg:w-[470px] rounded border-2 border-gray-950 p-5 ">
             <div className="flex gap-5 ">
                 <div>
                     <img  src="/images/rukon.jpeg" alt=""
