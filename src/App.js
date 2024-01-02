@@ -16,12 +16,11 @@ function App() {
      <main className="bg-neutral-100 " id="home">
          <Navbar/>
          <Banner/>
-
+         <Counter/>
          <Projects/>
          <Services/>
          <Pricing/>
          <Reviews/>
-         <Counter/>
          <OutTeam/>
          <Subscribe/>
          <Footer/>
