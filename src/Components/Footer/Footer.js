@@ -73,7 +73,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="container mx-auto px-5 py-[120px]">
+            <div className="max-w-[1200px] mx-auto px-5 py-[120px]">
                 <div className="grid md:grid-cols-12">
                     <div className="md:col-span-4">
                         <div className="flex items-center">
@@ -89,14 +89,14 @@ const Footer = () => {
 
                         <div>
                             <div className="py-[20px]">
-                                <ol className="flex items-center gap-2">
+                                <ol className="flex items-center gap-3">
                                     {
                                         socialLink?.map((data, index) => {
                                             return (
                                                 <li key={index}>
                                                     <a href={data?.link}>
                                                         <img
-                                                            className="w-[30px] h-[30px]"
+                                                            className="h-[30px]"
                                                             src={data?.icon}
                                                             alt={data?.title}/>
                                                     </a>
@@ -107,7 +107,7 @@ const Footer = () => {
                                 </ol>
                             </div>
                             <p className=" text-gray-950 text-lg font-normal font-['Montserrat'] leading-7">©
-                                2024 Pod Bulk. All rights reserved.
+                                {new Date().getFullYear()} Pod Bulk. All rights reserved.
                             </p>
                         </div>
                     </div>

@@ -3,9 +3,9 @@ import Marquee from "react-fast-marquee";
 const OutTeam = () => {
     return (
         <section>
-            <div className="container mx-auto">
+            <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-center">
-                    <div className="max-w-[777px] text-center px-5">
+                    <div className="max-w-[770px] text-center px-5">
                         <h1 className=" text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] uppercase leading-[57.60px]">MEET
                             OUR TEAM</h1>
                         <p
@@ -18,7 +18,9 @@ const OutTeam = () => {
                 </div>
 
 
-                <Marquee className=" py-16  ">
+                <Marquee
+                    speed={150}
+                    className=" py-16  ">
                     <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
                         <div className="-mt-12 md:-mt-16 flex justify-center">
                             <img src="/images/team1.png" alt=""/>

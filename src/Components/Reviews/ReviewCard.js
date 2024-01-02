@@ -8,40 +8,38 @@ const massage="Obsessed\n" +
     "                genius, look no further! 10/10, recommend without a doubt!"
 const ReviewCard = () => {
     return (
-        <div className="review-card w-[300px] lg:w-[470px] rounded border-2 border-gray-950 p-5 ">
-            <div className="flex gap-5 ">
-                <div>
+        <div className="review-card w-[300px] lg:w-[370px] rounded border-2 border-gray-950 p-3 ">
+            <div className="grid grid-cols-12 gap-2 items-center">
+                <div className="col-span-3">
                     <img  src="/images/rukon.jpeg" alt=""
-                         className="w-20 h-20 rounded-full "
+                         className="rounded-full object-cover"
                     />
                 </div>
-                <div>
-                    <h1 className=" text-2xl font-bold font-['Montserrat'] capitalize">Rukon
+                <div className="col-span-9">
+                    <h1 className=" text-lg lg:text-2xl font-bold font-['Montserrat'] capitalize">Rukon
                         Uddin</h1>
                     <div className="flex  gap-5 items-center ">
-                        <p className="text-base font-medium font-['Montserrat'] leading-relaxed">United
-                            States </p>
-                       -------------------
+                        <p className="text-base font-medium font-['Montserrat'] leading-relaxed">United States </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 items-center">
+                        <img src="/images/star-group.svg" alt="" className=" h-[16.14px]"/>
+
+                        <p
+                            className=" text-sm font-medium font-['Montserrat'] leading-relaxed"> | 2
+                            Days ago
+                        </p>
                     </div>
                 </div>
 
             </div>
 
-            <div className="flex gap-5 items-center">
-                <img src="/images/star-group.svg" alt="" className="w-[113px] h-[16.14px]"/>
-                |
-                <p
-                    className=" text-base font-medium font-['Montserrat'] leading-relaxed">2
-                    Days ago
-                </p>
-
-            </div>
 
             <div
-                className="  text-base font-medium font-['Montserrat'] leading-relaxed">
-<p>
-    {massage?.slice(0,350)}...
-</p>
+                className="  text-base font-medium font-['Montserrat'] leading-relaxed pt-3">
+                <p>
+                    {massage?.slice(0, 350)}...
+                </p>
 
             </div>
 

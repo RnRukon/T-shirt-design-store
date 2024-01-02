@@ -4,28 +4,28 @@ const Counter = () => {
 
     const counterData=[
         {
-            number:300,
+            number:560,
             title:"CLIENTS",
             icon:"/images/people.png"
         },{
-            number:300,
-            title:"CLIENTS",
-            icon:"/images/people.png"
+            number:900,
+            title:"COMPLETE PROJECT",
+            icon:"/images/project-icon.png"
         },{
-            number:300,
-            title:"CLIENTS",
-            icon:"/images/people.png"
+            number:6,
+            title:"TEAM MEMBER",
+            icon:"/images/team-icon.png"
         },{
-            number:300,
-            title:"CLIENTS",
-            icon:"/images/people.png"
+            number:5,
+            title:"YEARS EXPERIENCE",
+            icon:"/images/experience-icon.png"
         },
     ]
     return (
         <section className="w-full bg-yellow-50">
 
-            <div className="container mx-auto py-16 px-5  md:px-0">
-                <div className="grid md:grid-cols-4 grid-cols-2   gap-5 ">
+            <div className="max-w-[1200px] mx-auto py-16 px-5  md:px-0">
+                <div className="grid md:grid-cols-4 grid-cols-2   gap-8 ">
 
                     {
                         counterData?.map((data,index)=>{

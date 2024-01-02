@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Navbar = () => {
-
     const navLink=[
         {
             title:"HOME",
@@ -40,35 +39,41 @@ const Navbar = () => {
     ]
 
 
+
+
+
     return (
-        <nav  className="  shadow flex justify-between items-center md:px-20 px-5 fixed z-10 w-full bg-white top-0">
-            <div className="text-center text-gray-950 text-[64px] font-black font-['Montserrat']">PB</div>
+        <nav  className="shadow flex justify-between items-center md:px-20 px-5 fixed z-10 h-[100px] w-full bg-white top-0">
+
+                <h1 className="text-center text-gray-950 text-[30px] font-black font-['Montserrat']"><span
+                    className="text-gray-950 text-3xl font-bold font-['Montserrat'] leading-9">Pod</span><span
+                    className="text-orange-500 text-3xl font-bold font-['Montserrat'] leading-9">Bulk</span>
+                </h1>
 
             <div className=" hidden lg:block">
                 <div className=" flex items-center gap-5">
                     <ol className="flex items-center gap-5">
                         {
-                            navLink?.map((data,index) => {
+                            navLink?.map((data, index) => {
                                 return (
                                     <li key={index}>
                                         <a href={data?.path}
-                                           className="text-gray-950 text-base font-bold font-['Montserrat'] rounded px-[15px] py-[12px] hover:bg-orange-500 hover:text-white transition hover:transition "
+                                           className={`text-gray-950 text-base font-bold font-['Montserrat'] px-3  ${data?.title==="CUSTOM T-SHIRT"?"bg-orange-500 text-white rounded   py-[12px]":"hover:border-b-orange-500 hover:border-b-4 transition-all hover:transition-all "}  `}
                                         >{data?.title}</a>
                                     </li>
                                 )
                             })
                         }
                     </ol>
-                    <ol className="flex items-center gap-2">
+                    <ol className="flex items-center gap-3">
                         {
                             socialLink?.map((data,index) => {
                                 return (
                                     <li key={index}>
                                         <a href={data?.link}>
                                             <img
+                                                className="h-5"
                                                 src={data?.icon}
-                                                height={30}
-                                                width={30}
                                                 alt={data?.title}/>
                                         </a>
                                     </li>

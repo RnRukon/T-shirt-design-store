@@ -26,14 +26,14 @@ const Carousel = ({children}) => {
             <div className="flex justify-center pt-5">
                 <div className=" flex justify-center items-center  gap-5">
 
-                    <button className="  rounded-full hover:bg-orange-500 hover:text-white -rotate-90 p-2 hover:border-orange-500 border-2 border-black"
-                            onClick={goToPrevSlide}>
-                        <img  className="-rotate-90 " height={24} width={24} src="/images/rightArrow.svg" alt=""/>
 
-                    </button>
-                    <button className=" rounded-full hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
+                    <button className=" rounded-full h-12 w-12 bg-gray-950 hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
+                            onClick={goToPrevSlide}>
+                        <img   src="/images/back-right.png" alt=""/>
+
+                    </button><button className=" rounded-full h-12 w-12 bg-gray-950 hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
                             onClick={goToNextSlide}>
-                        <img  height={24} width={24} src="/images/rightArrow.svg" alt=""/>
+                        <img   src="/images/back-left.png" alt=""/>
                     </button>
                 </div>
             </div>

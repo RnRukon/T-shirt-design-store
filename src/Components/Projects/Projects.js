@@ -1,10 +1,39 @@
 import React from 'react';
 
 const Projects = () => {
+
+    const projects=[
+        {
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },{
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },
+        {
+            title:"",
+            image:"/images/t-shirt.jpg"
+        },
+    ]
     return (
-        <section id="portfolio" className="container mx-auto py-10 px-5">
+        <section id="portfolio" className="max-w-[1200px] mx-auto py-10 px-5">
             <div className=" flex justify-center">
-                <div className="max-w-[591px]">
+                <div className="max-w-[770px]">
                     <h1
                         className=" text-center text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] capitalize leading-[57.60px]">SEE
                         OUR WORK
@@ -21,28 +50,21 @@ const Projects = () => {
             </div>
 
             <div className="grid grid-cols-2  md:grid-cols-4  gap-5 pt-10">
-                <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div> <div>
-                    <img src="/images/t-shirt.jpg" alt=""/>
-                </div>
+
+                {
+                    projects?.map((data,index)=>{
+                        return (
+                            <div key={index}>
+                                <img src={data?.image} alt=""/>
+                            </div>
+                        )
+                    })
+                }
             </div>
 
-            <div className="flex justify-center mt-[15px]">
+            <div className="flex justify-center pt-[42px]">
                 <button type="button"
-                        className="w-[150px] h-[50px] bg-orange-500 text-white rounded-lg border"
+                        className="w-[172px] h-[50px] bg-orange-500 text-white rounded-lg border text-base font-bold font-['Montserrat']"
                 >
                     VIEW MORE
                 </button>

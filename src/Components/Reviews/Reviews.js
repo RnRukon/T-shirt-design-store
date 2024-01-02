@@ -8,10 +8,10 @@ const Reviews = () => {
     return (
         <section className="py-16">
 
-            <div className="container mx-auto">
+            <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-center">
                     <div className="max-w-[777px] text-center px-5">
-                        <h1 className=" text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] uppercase md:leading-[57.60px]">OUR
+                        <h1 className=" text-gray-950 text-xl md:text-3xl font-bold font-['Montserrat'] uppercase md:leading-[57.60px]">OUR
                             CUSTOMER REVIEWS</h1>
                         <p
                             className="pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Discover

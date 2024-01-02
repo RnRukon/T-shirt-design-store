@@ -38,7 +38,7 @@ const Pricing = () => {
 
 
     return (
-        <section className="container mx-auto px-5 py-16">
+        <section className="max-w-[1200px] mx-auto px-5 py-16">
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[29px]">
 

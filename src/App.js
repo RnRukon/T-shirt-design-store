@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-     <main className="bg-neutral-100">
+     <main className="bg-neutral-100 " id="home">
          <Navbar/>
          <Banner/>
          <Counter/>
