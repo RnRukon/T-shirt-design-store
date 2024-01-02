@@ -41,8 +41,7 @@ const Navbar = () => {
     ]
 
 
-console.log(mobile)
-
+const handleToggle=()=>setMobile(state=>!state);
 
     return (
         <nav
@@ -111,6 +110,7 @@ console.log(mobile)
                                 return (
                                     <li key={index}>
                                         <a href={data?.path}
+                                           onClick={handleToggle}
                                            className={`text-gray-950 text-base font-bold font-['Montserrat'] px-3  block ${data?.title === "CUSTOM T-SHIRT" ? "bg-orange-500 text-white rounded   py-[12px]" : "hover:border-b-orange-500 hover:border-b-4 transition-all hover:transition-all "}  `}
                                         >{data?.title}</a>
                                     </li>
@@ -124,7 +124,8 @@ console.log(mobile)
                                 socialLink?.map((data, index) => {
                                     return (
                                         <li key={index}>
-                                            <a href={data?.link}>
+                                            <a href={data?.link}
+                                            >
                                                 <img
                                                     className="h-5"
                                                     src={data?.icon}
