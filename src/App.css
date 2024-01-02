@@ -1,4 +1,4 @@
-.review-card:hover div div img{
+.review-card:hover div div .profilePhoto{
   border:2px solid #FE7E21;
 }
 .review-card{

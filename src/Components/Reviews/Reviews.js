@@ -10,11 +10,11 @@ const Reviews = () => {
 
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-center">
-                    <div className="max-w-[777px] text-center px-5">
-                        <h1 className=" text-gray-950 text-xl md:text-3xl font-bold font-['Montserrat'] uppercase md:leading-[57.60px]">OUR
+                    <div className=" text-center px-5">
+                        <h1 className=" text-gray-950 text-xl md:text-[64px] font-bold font-['Montserrat'] uppercase md:leading-[57.60px]">OUR
                             CUSTOMER REVIEWS</h1>
                         <p
-                            className="pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Discover
+                            className=" max-w-[777px] mx-auto pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Discover
                             what our valued customers have to say about their experiences with us. Read these genuine
                             reviews to get a glimpse into the satisfaction and trust we've earned.
                         </p>

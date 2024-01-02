@@ -22,13 +22,15 @@ const ReviewCard = () => {
                         <p className="text-base font-medium font-['Montserrat'] leading-relaxed">United States </p>
                     </div>
 
-                    <div className="flex flex-wrap gap-2 items-center">
-                        <img src="/images/star-group.svg" alt="" className=" h-[16.14px]"/>
+                    <div >
+                        <div className="flex  gap-2 items-center">
+                            <img src="/images/star-group.svg" className="h-4" alt=""/>
 
-                        <p
-                            className=" text-sm font-medium font-['Montserrat'] leading-relaxed"> | 2
-                            Days ago
-                        </p>
+                            <p
+                                className=" text-sm font-medium font-['Montserrat'] leading-relaxed"> | 2
+                                Days ago
+                            </p>
+                        </div>
                     </div>
                 </div>
 

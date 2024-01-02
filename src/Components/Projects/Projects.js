@@ -35,7 +35,7 @@ const Projects = () => {
             <div className=" flex justify-center">
                 <div className="max-w-[770px]">
                     <h1
-                        className=" text-center text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] capitalize leading-[57.60px]">SEE
+                        className=" text-center text-gray-950 text-2xl md:text-[64px] font-bold font-['Montserrat'] capitalize leading-[57.60px]">SEE
                         OUR WORK
                     </h1>
                     <p

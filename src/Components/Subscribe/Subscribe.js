@@ -16,9 +16,9 @@ const Subscribe = () => {
                     <div className="flex justify-center">
                         <div className="grid grid-cols-12 gap-1  pt-[42px]">
                             <input type="email" placeholder="Email Address"
-                                   className=" col-span-7 text-sm rounded border-2 border-gray-950  px-2  md:px-2"/>
+                                   className=" md:col-span-9 col-span-8 md:text-base text-sm rounded border-2 border-gray-950  px-2  md:px-2"/>
                             <button type="button"
-                                    className=" col-span-5 bg-orange-500  rounded border text-white text-sm md:text-base font-bold font-['Montserrat']  p-2  md:px-5 py-2">SUBSCRIBE
+                                    className=" md:col-span-3 col-span-4 bg-orange-500  rounded border text-white text-xs md:text-base font-bold font-['Montserrat']  p-2  md:px-5 py-2">SUBSCRIBE
                             </button>
                         </div>
                     </div>

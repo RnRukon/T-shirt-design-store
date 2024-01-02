@@ -21,7 +21,7 @@ const Services = () => {
             <div className="max-w-[1200px] mx-auto  px-5 pt-36">
                 <div className="flex justify-center">
                     <div className="max-w-[770px] text-center">
-                        <h1 className=" text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] uppercase leading-[57.60px]">CUSTOM T-SHIRT</h1>
+                        <h1 className=" text-gray-950 text-2xl md:text-[64px] font-bold font-['Montserrat'] uppercase leading-[57.60px]">CUSTOM T-SHIRT</h1>
                         <p
                             className="pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">Searching for that perfect T-shirt to rock on Amazon, Etsy, Shopify, and more? Look no further! We specialize in creating custom, awesome T-shirt designs tailored to your ideas, or we can provide our own.
                         </p>

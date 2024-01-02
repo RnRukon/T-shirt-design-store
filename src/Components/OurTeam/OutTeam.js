@@ -6,7 +6,7 @@ const OutTeam = () => {
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-center">
                     <div className="max-w-[770px] text-center px-5">
-                        <h1 className=" text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] uppercase leading-[57.60px]">MEET
+                        <h1 className=" text-gray-950 text-2xl md:text-[64px] font-bold font-['Montserrat'] uppercase leading-[57.60px]">MEET
                             OUR TEAM</h1>
                         <p
                             className="pt-5 text-gray-950 text-base font-medium font-['Montserrat'] leading-relaxed">We’re
