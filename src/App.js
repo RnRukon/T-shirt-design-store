@@ -10,6 +10,7 @@ import Reviews from "./Components/Reviews/Reviews";
 import OutTeam from "./Components/OurTeam/OutTeam";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
+import Chat from "./Components/Chat/Chat";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
          <OutTeam/>
          <Subscribe/>
          <Footer/>
+         <Chat/>
      </main>
   );
 }
