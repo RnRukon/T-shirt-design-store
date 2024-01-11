@@ -3,28 +3,28 @@ import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from "react-visibility-sensor";
 
 const Counter = () => {
-    useCountUp({ ref: 'counter', end: 10, duration: 2 });
+    useCountUp({ ref: 'counter', end: 10, duration: 100});
     const counterData=[
         {
             number:560,
             title:"CLIENTS",
             icon:"/images/people.png",
-            start:500
+            start:400
         },{
             number:900,
             title:"COMPLETE PROJECT",
             icon:"/images/project-icon.png",
-            start: 850
+            start: 700
         },{
             number:6,
             title:"TEAM MEMBER",
             icon:"/images/team-icon.png",
-            start: 2
+            start: 0
         },{
             number:5,
             title:"YEARS EXPERIENCE",
             icon:"/images/experience-icon.png",
-            start: 2
+            start: 0
         },
     ]
     return (
@@ -47,7 +47,7 @@ const Counter = () => {
                                                 </div>
                                             </div>
                                             <h1 className="text-center text-gray-950 text-[40px] font-extrabold font-['Montserrat']">
-                                                <CountUp end={data?.number} start={data?.start} >
+                                                <CountUp end={data?.number} start={data?.start} duration={2} >
                                                     {({ countUpRef, start }) => (
                                                         <VisibilitySensor onChange={start}>
                                                             <span ref={countUpRef} />

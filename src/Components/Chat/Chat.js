@@ -3,23 +3,30 @@ import React, {useState} from 'react';
 const Chat = () => {
     const [show,setShow]=useState(false);
     return (
-        <div className="fixed  z-50 bottom-0 right-0">
-            <div className="relative flex flex-col gap-1  px-5">
-                <div className={`flex flex-col gap-1  ${show?"block":"hidden"}`} >
-                        <button>
-                            <img className="h-20 " src="/images/messenger.png" alt="chat"/>
+        <div className="fixed  z-50 bottom-3 right-0">
+            <div className="relative ">
+                <div className="flex flex-col gap-1  px-5">
+                        <button
+                            className={`duration-1000 relative  ${show?"-top-[1px] ":" top-32"}`}
+                        >
+                            <img className="h-[60px] " src="/images/messenger.png" alt="chat"/>
                         </button>
-                        <button type="button">
-                            <img className="h-20 " src="/images/whatsapp.png" alt="chat"/>
+                        <button type="button"
+                        className={`duration-1000 relative  ${show?"-top-[1px] ":" top-16"}`}
+                        >
+                            <img className="h-[60px] " src="/images/whatsapp.png" alt="chat"/>
                         </button>
-                    </div>
-                <button
-                    onClick={() => setShow(state => !state)}
-                    type='button'
-                >
-                    <img className="h-20 " src="/images/chat.png" alt="chat"/>
-                </button>
+
+                        <button
+                            onClick={() => setShow(state => !state)}
+                            type='button'
+                            className=" relative z-10 bg-[#f97316] rounded-full  "
+                        >
+                            <img className="h-[60px] p-3 " src="/images/chat.png" alt="chat"/>
+                        </button>
+                </div>
             </div>
+
         </div>
     );
 };
