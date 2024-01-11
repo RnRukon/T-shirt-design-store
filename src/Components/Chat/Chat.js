@@ -20,9 +20,9 @@ const Chat = () => {
                         <button
                             onClick={() => setShow(state => !state)}
                             type='button'
-                            className=" relative z-10 h-[60px] w-[60px] bg-[#f97316] rounded-full  "
+                            className={`duration-1000  relative z-10 h-[60px] w-[60px] bg-[#f97316] rounded-full   ${show ? "rotate-[630deg]" : "rotate-[0deg]"}`}
                         >
-                            <img className="h-[60px] p-3 " src="/images/chat.png" alt="chat"/>
+                            <img className={`h-[60px] p-3 `} src={`${show?"/images/closee.png":"/images/chat.png"}`} alt="chat"/>
                         </button>
                 </div>
             </div>
