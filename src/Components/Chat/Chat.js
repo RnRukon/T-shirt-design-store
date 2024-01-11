@@ -5,14 +5,14 @@ const Chat = () => {
     return (
         <div className="fixed  z-50 bottom-3 right-0">
             <div className="relative ">
-                <div className="flex flex-col gap-1  px-5">
+                <div className="flex flex-col gap-1  pr-2">
                         <button
-                            className={`duration-1000 relative  ${show?"-top-[1px] ":" top-32"}`}
+                            className={`duration-1000 relative  ${show?"-top-[1px]":" top-32"}`}
                         >
                             <img className="h-[60px] " src="/images/messenger.png" alt="chat"/>
                         </button>
                         <button type="button"
-                        className={`duration-1000 relative  ${show?"-top-[1px] ":" top-16"}`}
+                        className={`duration-1000 relative   ${show?"-top-[1px] transition-all":" top-16"}`}
                         >
                             <img className="h-[60px] " src="/images/whatsapp.png" alt="chat"/>
                         </button>
