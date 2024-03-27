@@ -1,26 +1,7 @@
 import React from 'react';
+import {socialLink} from "../Nevbar/Navbar";
 
 const Footer = () => {
-
-    const socialLink=[
-        {
-            title:"Facebook",
-            icon:"/images/facebook.png",
-            link:""
-        },
-        {
-            title:"Twitter",
-            icon:"/images/twitter.png",
-            link: ""
-        },
-        {
-            title:"Instagram",
-            icon:"/images/instagram.png",
-            link: ""
-        }
-    ];
-
-
 
     const footerData={
                             footerLink:[

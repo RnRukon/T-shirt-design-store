@@ -1,24 +1,26 @@
 import React, {useState} from 'react';
+import ReviewCard from "./ReviewCard";
 
 
-const Carousel = ({children}) => {
+
+const Carousel = ({CustomerReview}) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const goToPrevSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide === 0 ? images.length - 1 : prevSlide - 1));
+        setCurrentSlide((prevSlide) => (prevSlide === 0 ? CustomerReview.length - 1 : prevSlide - 1));
     };
 
     const goToNextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide === images.length - 1 ? 0 : prevSlide + 1));
+        setCurrentSlide((prevSlide) => (prevSlide === CustomerReview.length - 1 ? 0 : prevSlide + 1));
     };
 
-    const images =[1,2,3,4,6,7,8,3,4]
+
     return (
         <div className="carousel pt-10">
             <div className="slides-container" style={{transform: `translateX(-${currentSlide * 33.33}%)`}}>
-                {images.map((item, index) => (
+                {CustomerReview?.map((review, index) => (
                     <div className="slide" key={index}>
-                        {children}
+                        <ReviewCard review={review}/>
                     </div>
                 ))}
             </div>

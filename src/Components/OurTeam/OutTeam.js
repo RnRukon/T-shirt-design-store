@@ -1,6 +1,38 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 const OutTeam = () => {
+    const teams=[
+        {
+            name:"Abir Chowdhury",
+            image:"/TeamMember/Abir_Chowdhury.jpg",
+            position:"Professional Graphic Designer"
+        },
+        {
+            name:"Rubel Ahamed",
+            image:"/TeamMember/Rubel_Ahamed.jpg",
+            position:"POD Expert Designer"
+        },
+        {
+            name:"Onima Islam",
+            image:"/TeamMember/Onima_Islam.jpg",
+            position:"POD Expert Designer"
+        },
+        {
+            name:"Abbas Ahmed Shamim",
+            image:"/TeamMember/AbbasAhmedShamim.jpg",
+            position:"Young Graphic Designer"
+        },
+        {
+            name:"Nadia Islam",
+            image:"/TeamMember/NadiaIslam.jpg",
+            position:"Content Writer & SEO Expert"
+        },
+        {
+            name:"Rukon Uddin",
+            image:"/TeamMember/RukonUddin.jpeg",
+            position:"Professional Web Developeryarn"
+        },
+    ]
     return (
         <section>
             <div className="max-w-[1200px] mx-auto">
@@ -21,72 +53,23 @@ const OutTeam = () => {
                 <Marquee
                     speed={150}
                     className=" py-16  ">
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
-                    <div className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
-                        <div className="-mt-12 md:-mt-16 flex justify-center">
-                            <img src="/images/team1.png" alt=""/>
-                        </div>
-                        <div>
-                            <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">Rubel
-                                Ahamed</h4>
-                            <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">POD
-                                Expert Designer </p>
-                        </div>
-                    </div>
+                    {
+                        teams.map(team=>{
+                            return (
+                                <div
+                                    className="rounded border-2 md:px-5 border-gray-950 p-5 md:p-10 w-[230px]  md:w-[370px] mx-3 ">
+                                    <div className="-mt-12 md:-mt-16 flex justify-center">
+                                        <img className="w-full h-full object-contain rounded" src={team.image} alt={team.name}/>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-center pt-[30px] text-gray-950 md:text-2xl font-bold font-['Montserrat'] capitalize leading-[28.80px]">{team.name}</h4>
+                                        <p className="text-center pt-2 text-orange-500 text-sm md:text-base font-medium font-['Montserrat'] md:leading-relaxed">{team.position} </p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
 
                 </Marquee>
             </div>

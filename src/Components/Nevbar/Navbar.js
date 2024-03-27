@@ -1,5 +1,22 @@
 import React, {useState} from 'react';
 
+ export const socialLink=[
+    {
+        title:"Facebook",
+        icon:"/images/facebook.png",
+        link:"https://facebook.com/podbulk"
+    },
+    {
+        title:"Twitter",
+        icon:"/images/twitter.png",
+        link: "https://twitter.com/podbulk"
+    },
+    {
+        title:"Instagram",
+        icon:"/images/instagram.png",
+        link: "https://www.instagram.com/podbulk"
+    }
+]
 const Navbar = () => {
     const [mobile,setMobile]=useState(false);
 
@@ -22,23 +39,7 @@ const Navbar = () => {
         }
     ];
 
-    const socialLink=[
-        {
-            title:"Facebook",
-            icon:"/images/facebook.png",
-            link:""
-        },
-        {
-            title:"Twitter",
-            icon:"/images/twitter.png",
-            link: ""
-        },
-        {
-            title:"Instagram",
-            icon:"/images/instagram.png",
-            link: ""
-        }
-    ]
+
 
 
 const handleToggle=()=>setMobile(state=>!state);

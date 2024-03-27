@@ -5,29 +5,29 @@ const Projects = () => {
     const projects=[
         {
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Beer_T-shirt_ design_.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Camping_T_shirt_design_01.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Dog_T_shirt_design_01.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Dog_T_shirt_design_02_01.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Fishing_T_shirt_design_01.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Horse_T_shirt_design_01.jpg"
         },{
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Hunting_T_shirt_design_01.jpg"
         },
         {
             title:"",
-            image:"/images/t-shirt.jpg"
+            image:"/products/Nurse_T_shirt_design_01.jpg"
         },
     ]
     return (
