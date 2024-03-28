@@ -30,7 +30,7 @@ const OutTeam = () => {
         {
             name:"Rukon Uddin",
             image:"/TeamMember/RukonUddin.jpeg",
-            position:"Professional Web Developeryarn"
+            position:"Professional Web Developer"
         },
     ]
     return (
