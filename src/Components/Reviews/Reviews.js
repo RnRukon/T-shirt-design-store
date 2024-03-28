@@ -19,14 +19,7 @@ const Reviews = () => {
             message:"I recently had an outstanding experience with PodBulk. They effortlessly grasped the project requirements with minimal guidance from my end. I needed a bulk order of 100 T-shirts, each catering to different niches, and PodBulk delivered flawlessly. If you're seeking to jumpstart your POD store with a bulk order, look no further than this exceptional service. AAA+ quality and delivery ahead of schedule. Many thanks to PodBulk for exceeding expectations!!",
             image:"/ReviewImage/Art Studio.jpg"
         },
-        {
-            name:"David Billings",
-            country:"United States",
-            date:"2 days ago",
-            message:"The team at Podbulk demonstrated a deep understanding of my needs and objectives,\n" +
-                "taking the time to listen to my ideas and concerns before crafting a tailored strategy that exceeded my expectations. Their attention to detail and commitment to excellence were evident at every stage of the process, from the initial consultation to the final deliverables\n",
-            image:"/ReviewImage/David Billings.jpg"
-        },
+
         {
             name:"Maria Champlin",
             country:"United States",
@@ -94,22 +87,16 @@ const Reviews = () => {
             date:"1 month ago",
             message:"One of the most impressive aspects of working with Pod Bulk is their unwavering commitment to" +
                 " excellence. Every deliverable was meticulously crafted with attention to detail, showcasing their dedication to producing work of the highest standard. Their creativity and attention to detail consistently elevated our marketing efforts, resulting in tangible results and a measurable return on investment.",
-            image:"/ReviewImage/David Herman.png"
+            image:"/ReviewImage/Harry Walsh.jpg"
         },
         {
             name:"Logan Barnes",
             country:"Australia",
             date:"1 month ago",
             message:"I've had the pleasure of working on my second project with PodBulk, and once again, they've exceeded expectations. Their communication is top-notch, and they promptly implemented all requested changes. I wholeheartedly endorse this platform!",
-            image:"/ReviewImage/David Herman.png"
+            image:"/ReviewImage/Logan Barnes.png"
         },
-        {
-            name:"Olivia",
-            country:"United States",
-            date:"1 month ago",
-            message:"One of the most impressive aspects of working with Pod Bulk is their unwavering commitment to excellence. Every deliverable was meticulously crafted with attention to detail, showcasing their dedication to producing work of the highest standard. Their creativity and attention to detail consistently elevated our marketing efforts, resulting in tangible results and a measurable return on investment. ",
-            image:"/ReviewImage/David Herman.png"
-        },
+
         {
             name:"Lion King Luxurious",
             country:"Canada",
@@ -122,14 +109,14 @@ const Reviews = () => {
             country:"United States",
             date:"1 month ago",
             message:"One of the most impressive aspects of working with Pod Bulk is their unwavering commitment to excellence. Every deliverable was meticulously crafted with attention to detail, showcasing their dedication to producing work of the highest standard. Their creativity and attention to detail consistently elevated our marketing efforts, resulting in tangible results and a measurable return on investment. ",
-            image:"/ReviewImage/David Herman.png"
+            image:"/ReviewImage/Olivia.png"
         },
         {
             name:"Devin Jacobs",
             country:"United States",
             date:"3 month ago",
             message:"Highly professional, their graphic skills are truly outstanding. Not only did they meet deadlines, but they also exceeded expectations, leaving our team thoroughly satisfied with their work. Thank you for your exceptional service!",
-            image:"/ReviewImage/David Herman.png"
+            image:"/ReviewImage/Devin Jacobs.jpg"
         },
     ]
     return (

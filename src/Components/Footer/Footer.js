@@ -10,7 +10,7 @@ const Footer = () => {
                                 categories:[
                                     {
                                         name:"T-shirt",
-                                        path:"/"
+                                        path:"/#portfolio"
                                     },{
                                         name:"POD Item",
                                         path:"/"

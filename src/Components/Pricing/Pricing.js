@@ -1,5 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
+import OrderContact from "../OrderContact/OrderContact";
 const Pricing = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
+
 
     const pricings={
         datas:[
@@ -44,25 +55,19 @@ const Pricing = () => {
 
                     {
                         pricings?.datas?.map((data, index) => {
-
                             return (
                                 <div key={index}
                                      className=" pricingCard rounded border-2 border-gray-950 py-10 px-[34px] flex flex-col justify-between"
                                 >
-
                                     <div >
                                         <div>
                                             <h1 className="text-center text-gray-950 text-2xl md:text-3xl font-bold font-['Montserrat'] capitalize leading-[48px]">{data?.title}</h1>
-
-
                                             <div
                                                 className=" rounded border-2 border-gray-950 text-gray-950 text-2xl md:text-3xl py-1 font-extrabold font-['Montserrat'] capitalize w-full my-[20px] flex justify-center ">
                                                <p> ${data?.price}</p>
-
                                             </div>
                                         </div>
                                     </div>
-
                                     <div>
                                         <ol >
                                             {
@@ -71,11 +76,9 @@ const Pricing = () => {
                                                         <li
                                                             key={index}
                                                             className="text-gray-950 text-base md:text-2xl font-medium font-['Montserrat'] leading-[33.60px] flex py-2.5">
-
                                                             <img src="/images/raphael_tshirt.png" alt=""
                                                                  className="w-[25px] h-[25px] "
                                                             /> <span>{feature}</span>
-
                                                         </li>
                                                     )
                                                 })
@@ -85,10 +88,12 @@ const Pricing = () => {
 
                                     <div className="flex justify-center ">
                                         <button
+                                            onClick={openModal}
                                             className="w-[172px] h-11 rounded border-2 border-gray-950 text-center text-gray-950 text-base font-bold font-['Montserrat']">
                                             ORDER NOW
                                         </button>
                                     </div>
+
                                 </div>
                             )
                         })
@@ -100,6 +105,8 @@ const Pricing = () => {
                     className="text-gray-950 text-base md:text-2xl font-medium font-['Montserrat'] text-justify leading-[38.40px]"> If you are looking for bulk orders or long-term collaboration for your POD business, please contact us. We have a great design team and offer reasonable prices.</span>
                 </div>
             </div>
+
+            <OrderContact isOpen={isOpen} closeModal={closeModal}/>
         </section>
     );
 };

@@ -86,7 +86,7 @@ const handleToggle=()=>setMobile(state=>!state);
                                     socialLink?.map((data, index) => {
                                         return (
                                             <li key={index}>
-                                                <a href={data?.link}>
+                                                <a href={data?.link} target="_blank"  rel="noreferrer">
                                                     <img
                                                         className="h-5"
                                                         src={data?.icon}
