@@ -26,8 +26,6 @@ const ReviewCard = ({ review }) => {
                                     size={20}
                                     activeColor="#ffd700"
                                 />
-                           
-
                             <p
                                 className=" text-sm font-medium font-['Montserrat'] leading-relaxed"> | {review.date}
                             </p>
