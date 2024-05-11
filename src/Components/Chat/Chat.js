@@ -14,7 +14,7 @@ const Chat = () => {
                         </button>
                     </a>
 
-                    <a href="https://wa.me/01323169833" target="_blank" rel="noreferrer"
+                    <a href="https://wa.me/+8801323169833" target="_blank" rel="noreferrer"
                        className={`duration-1000 relative h-[60px] w-[60px] rounded-full ${show ? "-top-[1px] transition-all" : " top-16"}`}>
                         <button type="button"
 

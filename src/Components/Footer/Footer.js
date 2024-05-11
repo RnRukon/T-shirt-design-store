@@ -1,5 +1,6 @@
 import React from 'react';
 import {socialLink} from "../Nevbar/Navbar";
+import { Link} from 'react-router-dom';
 
 const Footer = () => {
 
@@ -10,13 +11,16 @@ const Footer = () => {
                                 categories:[
                                     {
                                         name:"T-shirt",
-                                        path:"/#portfolio"
+                                        path:"/#portfolio",
+                                        link:"a"
                                     },{
                                         name:"POD Item",
-                                        path:"/"
+                                        path:"/",
+                                        link:"a"
                                     },{
                                         name:"Brand Identity",
-                                        path:"/"
+                                        path:"/",
+                                        link:"a"
                                     },
                                 ]
                             },
@@ -25,13 +29,16 @@ const Footer = () => {
                                     categories:[
                                         {
                                             name:"Help Center",
-                                            path:"/"
+                                            path:"/",
+                                            link:"a"
                                         },{
                                             name:"Refund Policy",
-                                            path:"/"
+                                            path:"/",
+                                            link:"a"
                                         },{
                                             name:"Vector Information",
-                                            path:"/"
+                                            path:"/",
+                                            link:"a"
                                         },
                                     ]
                                 },{
@@ -39,13 +46,16 @@ const Footer = () => {
                                     categories:[
                                         {
                                             name:"Contact Us",
-                                            path:"/"
+                                            path:"/#contact-us",
+                                            link:"a"
                                         },{
                                             name:"Privacy Policy",
-                                            path:"/"
+                                            path:"/privacy-policy",
+                                            link:"route"
                                         },{
                                             name:"Terms & Conditions",
-                                            path:"/"
+                                            path:"/",
+                                            link:"a"
                                         },
                                     ]
                                 },
@@ -58,14 +68,7 @@ const Footer = () => {
                 <div className="grid md:grid-cols-12">
                     <div className="md:col-span-4">
                         <div className="flex items-center">
-                            <h1 className="w-[75px] h-[57px] text-center"><span
-                                className="text-gray-950 text-5xl font-bold font-['Montserrat'] leading-[57.60px]">P</span><span
-                                className="text-orange-500 text-5xl font-bold font-['Montserrat'] leading-[57.60px]">B</span>
-                            </h1>
-                            <h1 className="w-[141px] h-9 text-center"><span
-                                className="text-gray-950 text-3xl font-bold font-['Montserrat'] leading-9">Pod</span><span
-                                className="text-orange-500 text-3xl font-bold font-['Montserrat'] leading-9">Bulk</span>
-                            </h1>
+                        <img className="w-40" src="/logo192.png" alt="pod bulk" />
                         </div>
 
                         <div>
@@ -102,8 +105,6 @@ const Footer = () => {
                             <ol className="grid grid-cols-2 md:grid-cols-3">
                                 {
                                     footerData?.footerLink?.map((data,index) => {
-
-
                                         return (
                                             <li key={index}>
                                                 <div>
@@ -116,11 +117,24 @@ const Footer = () => {
 
                                                                     return (
                                                                         <li key={index}>
-                                                                            <a
+                                                                            {
+data?.link==="a"?
+
+<a
                                                                                 className=" text-gray-950 text-opacity-50 text-[15.17px] font-normal font-['Poppins'] leading-snug"
                                                                                 href={data?.path}>
                                                                                 {data?.name}
-                                                                            </a>
+                                                                            </a>:
+
+
+
+<Link
+                                                                                className=" text-gray-950 text-opacity-50 text-[15.17px] font-normal font-['Poppins'] leading-snug"
+                                                                                to={data?.path}>
+                                                                                {data?.name}
+                                                                            </Link>
+                                                                            }
+                                                                            
                                                                         </li>
                                                                     )
                                                                 })
@@ -134,8 +148,6 @@ const Footer = () => {
                                     })
                                 }
                             </ol>
-
-
                         </div>
                     </div>
                 </div>

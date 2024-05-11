@@ -48,20 +48,19 @@ const handleToggle=()=>setMobile(state=>!state);
         <nav
             className={`shadow flex  ${!mobile ? "   justify-between   flex-col" : "h-screen lg:h-fit py-[30px]" +
                 " flex-row " +
-                " flex-col"}  py-[30px]  lg:px-20 px-5 fixed z-10  w-full bg-white top-0`}>
+                " flex-col"}  py-[30px]  lg:px-20 px-5 sticky top-0 z-10  w-full bg-white`}>
 
             <div className="flex justify-between">
-                <h1 className=" text-gray-950 text-[30px] font-black font-['Montserrat']"><span
-                    className="text-gray-950 text-3xl font-bold font-['Montserrat'] leading-9">Pod</span><span
-                    className="text-orange-500 text-3xl font-bold font-['Montserrat'] leading-9">Bulk</span>
-                </h1>
+               <a href="/#">
+               <img className="w-28" src="/logo192.png" alt="pod bulk" />
+               </a>
 
                 <div className="lg:hidden block">
                     <button
                         onClick={() => setMobile(!mobile)}
                         type="button"
                     >
-                        <img className="h-7" src={`${!mobile ? "/images/threeLine.png" : "/images/close.png"}`} alt=""/>
+                        <img className="h-7" src={`${!mobile ? "/images/threeLine.png" : "/images/close.png"}`} alt="threeLine"/>
                     </button>
                 </div>
 

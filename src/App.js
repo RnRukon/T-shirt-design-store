@@ -1,31 +1,36 @@
-
 import './App.css';
-import Navbar from "./Components/Nevbar/Navbar";
-import Banner from "./Components/Banner/Banner";
-import Counter from "./Components/Counter/Counter";
-import Projects from "./Components/Projects/Projects";
-import Services from "./Components/Services/Services";
-import Pricing from "./Components/Pricing/Pricing";
-import Reviews from "./Components/Reviews/Reviews";
-import OutTeam from "./Components/OurTeam/OutTeam";
-import Subscribe from "./Components/Subscribe/Subscribe";
-import Footer from "./Components/Footer/Footer";
-import Chat from "./Components/Chat/Chat";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './Components/Home/Home';
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
+import NotFound from './Components/NotFound/NotFound';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+  {
+    path:"/privacy-policy",
+    element:<PrivacyPolicy/>
+  },
+  {
+    path:"*",
+    element:<NotFound/>
+  }
+]);
 
 function App() {
+
+
   return (
      <main className="bg-neutral-100 " id="home">
-         <Navbar/>
-         <Banner/>
-         <Counter/>
-         <Projects/>
-         <Services/>
-         <Pricing/>
-         <Reviews/>
-         <OutTeam/>
-         <Subscribe/>
-         <Footer/>
-         <Chat/>
+         
+         <RouterProvider router={router} />
+         
      </main>
   );
 }

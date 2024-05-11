@@ -5,7 +5,7 @@ const Banner = () => {
     const banners=["/images/banner1.jpg","/images/banner2.jpg","/images/banner1.jpg","/images/banner2.jpg","/images/banner1.jpg","/images/banner2.jpg","/images/banner1.jpg","/images/banner2.jpg"];
 
     return (
-        <div  className="pt-[95px]">
+        <div>
             <Marquee>
                 {
                     banners.map((banner,index)=>{
