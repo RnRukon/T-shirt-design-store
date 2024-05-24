@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import ReviewCard from "./ReviewCard";
 
 
 
-const Carousel = ({CustomerReview}) => {
+const Carousel = ({ CustomerReview }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const goToPrevSlide = () => {
@@ -17,10 +17,10 @@ const Carousel = ({CustomerReview}) => {
 
     return (
         <div className="carousel pt-10">
-            <div className="slides-container" style={{transform: `translateX(-${currentSlide * 33.33}%)`}}>
+            <div className="slides-container" style={{ transform: `translateX(-${currentSlide * 33.33}%)` }}>
                 {CustomerReview?.map((review, index) => (
                     <div className="slide" key={index}>
-                        <ReviewCard review={review}/>
+                        <ReviewCard review={review} />
                     </div>
                 ))}
             </div>
@@ -30,12 +30,12 @@ const Carousel = ({CustomerReview}) => {
 
 
                     <button className=" rounded-full h-12 w-12 bg-gray-950 hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
-                            onClick={goToPrevSlide}>
-                        <img   src="/images/back-right.png" alt=""/>
+                        onClick={goToPrevSlide}>
+                        <img src="/images/back-right.png" alt="" />
 
                     </button><button className=" rounded-full h-12 w-12 bg-gray-950 hover:bg-orange-500 hover:text-white flex justify-center items-center p-2  hover:border-orange-500 border-2 border-black"
-                            onClick={goToNextSlide}>
-                        <img   src="/images/back-left.png" alt=""/>
+                        onClick={goToNextSlide}>
+                        <img src="/images/back-left.png" alt="" />
                     </button>
                 </div>
             </div>

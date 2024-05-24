@@ -25,7 +25,7 @@ const OrderContact = ({isOpen,closeModal}) => {
                         <div className="flex gap-4 justify-center mt-16">
                             <a
                                 className="hover:bg-[#f97316] hover:text-white border-2 border-gray-700 hover:border-[#f97316] duration-100 font-bold text-lg rounded-lg px-5 py-3"
-                                href="https://api.whatsapp.com/send?phone=1323169833"
+                                href="https://wa.me/+8801323169833"
                                 target="_blank"
                                 rel="noreferrer"
                             >
